@@ -13,3 +13,8 @@
 | 퀘스트명 | URL |
 | --- | --- |
 | 1. langchain 시작하기 | [Link](https://github.com/hhhhhhhhhhhhhhhhho/langchain-study/tree/main/1.%20langchain%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0) |
+## 📚 Langchain
+
+| 퀘스트명 | URL |
+| --- | --- |
+| 1. langchain 시작하기 | [Link](https://github.com/hhhhhhhhhhhhhhhhho/langchain-study/tree/main/1.%20langchain%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0) |
