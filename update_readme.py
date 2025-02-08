@@ -43,7 +43,7 @@ def update_readme(repo, folders, original_content):
         original_content = original_content[:start_index]
 
     
-    new_table = "📚 Langchain\n\n"
+    new_table = "## 📚 Langchain\n\n"
     new_table += "| 퀘스트명 | URL |\n"
     new_table += "| --- | --- |\n"
 
