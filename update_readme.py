@@ -1,14 +1,31 @@
 import requests
 import re
+import json
 
 # GitHub API를 통해 특정 저장소의 폴더 목록을 가져오는 함수
 def get_folders(repo):
-    # GitHub API를 사용하기 위한 URL 생성
     url = f"https://api.github.com/repos/{repo}/contents/"
     response = requests.get(url)
-    # API로부터 받은 응답을 JSON 형식으로 파싱하여 저장
-    folders = [item for item in response.json() if item['type'] == 'dir' and not item['name'].startswith('.')]
-    return folders
+    
+    if response.status_code != 200:
+        print(f"Error: API request failed with status code {response.status_code}")
+        print(f"Response content: {response.text}")
+        return []
+    
+    try:
+        data = response.json()
+        if isinstance(data, dict) and 'message' in data:
+            print(f"API Error: {data['message']}")
+            return []
+        
+        folders = [item for item in data if item['type'] == 'dir' and not item['name'].startswith('.')]
+        return folders
+    
+    except json.JSONDecodeError:
+        print("Error: Unable to parse JSON response")
+        print(f"Response content: {response.text}")
+        return []
+
 
 # 폴더 이름에서 숫자를 추출하는 함수
 def extract_number(folder_name):
