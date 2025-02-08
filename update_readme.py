@@ -59,7 +59,7 @@ def update_readme(repo, folders, original_content):
     return updated_content
 
 # 사용자가 자신의 GitHub 리포지토리 이름을 여기에 입력
-user_repo = "hhhhhhhhhhhhhhhhho/langchain-stduy"
+user_repo = "hhhhhhhhhhhhhhhhho/langchain-study"
 
 # 기존 README.md 내용을 읽어옵니다.
 try:
