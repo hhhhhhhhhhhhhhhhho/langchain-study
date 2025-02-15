@@ -44,4 +44,4 @@ LangSmith 는 당신의 LLM 어플리케이션을 추적, 관찰, 평가하는 �
 
 LangSmith 는 당신의 LLM 어플리케이션 평가를 도와줍니다. 
 아래의 튜토리얼은 평가를 시작하는 가장 좋은 방법입니다.
- [Evaluate your LLM application](https://docs.smith.langchain.com/evaluation/tutorials/evaluation)
+ * [Evaluate your LLM application](https://docs.smith.langchain.com/evaluation/tutorials/evaluation)
